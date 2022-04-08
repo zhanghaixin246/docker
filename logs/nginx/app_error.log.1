@@ -1,0 +1,99 @@
+2022/04/07 09:29:56 [error] 12#12: *484 FastCGI sent in stderr: "PHP message: PHP Warning:  Uncaught ErrorException: Array to string conversion in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php:35
+Stack trace:
+#0 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Array to string...', '/var/www/linker...', 35, Array)
+#1 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): require()
+#2 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(417): Illuminate\Routing\RouteFileRegistrar->register(Array)
+#3 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(374): Illuminate\Routing\Router->loadRoutes(Array)
+#4 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(135): Illuminate\Routing\Router->group(Array, Array)
+#5 /var/www/linker-pro/routes/api.php(67): Illuminate\Routing\RouteRegistrar->group(Array, Object(Closure))
+#6 /var in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php on line 35PHP message: PHP Fatal error:  Illuminate\Routing\RouteFileRegistrar::register(): Failed opening required 'Array' (include_path='.:/usr/local/lib/php') in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php on line 35" while reading response header from upstream, client: 172.19.0.1, server: linker-pro, request: "GET /api/cpe/version-list/123 HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "linker-pro"
+2022/04/07 09:46:38 [error] 12#12: *517 FastCGI sent in stderr: "PHP message: PHP Warning:  Uncaught ErrorException: Array to string conversion in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php:35
+Stack trace:
+#0 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Array to string...', '/var/www/linker...', 35, Array)
+#1 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): require()
+#2 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(417): Illuminate\Routing\RouteFileRegistrar->register(Array)
+#3 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(374): Illuminate\Routing\Router->loadRoutes(Array)
+#4 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\Routing\Router->group(Array, Array, Object(Closure))
+#5 /var/www/linker-pro/routes/api.php(54): Illuminate\Support\Facades\Facade::__callStatic('group' in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php on line 35PHP message: PHP Fatal error:  Illuminate\Routing\RouteFileRegistrar::register(): Failed opening required 'Array' (include_path='.:/usr/local/lib/php') in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php on line 35" while reading response header from upstream, client: 172.19.0.1, server: linker-pro, request: "GET /api/cpes/%7Bid%7D HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "linker-pro"
+2022/04/07 15:25:37 [error] 12#12: *604 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Interface 'App\Repositories\Line\Repositories\BaseRepositoryInterfac' not found in /var/www/linker-pro/app/Repositories/Line/Repositories/LineRepository.php on line 9PHP message: PHP Fatal error:  Uncaught ReflectionException: Class translator does not exist in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('translator')
+#1 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('translator')
+#2 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('translator', Array, true)
+#3 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(637): Illuminate\Foundation\Application->resolve('translator', Array)
+#4 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(781): Illuminate\Container\Container->make('translator', Array)
+#5 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(119): Illuminate\ in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811" while reading response header from upstream, client: 172.19.0.1, server: linker-pro, request: "GET /api/cpe/init/3 HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "linker-pro"
+2022/04/07 15:25:55 [error] 12#12: *606 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Interface 'App\Repositories\Line\Repositories\BaseRepositoryInterfac' not found in /var/www/linker-pro/app/Repositories/Line/Repositories/LineRepository.php on line 9PHP message: PHP Fatal error:  Uncaught ReflectionException: Class translator does not exist in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('translator')
+#1 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('translator')
+#2 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('translator', Array, true)
+#3 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(637): Illuminate\Foundation\Application->resolve('translator', Array)
+#4 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(781): Illuminate\Container\Container->make('translator', Array)
+#5 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(119): Illuminate\ in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811" while reading response header from upstream, client: 172.19.0.1, server: linker-pro, request: "GET /api/cpe/init/3 HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "linker-pro"
+2022/04/07 15:26:27 [error] 12#12: *608 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Interface 'App\Repositories\Line\Repositories\BaseRepositoryInterfac' not found in /var/www/linker-pro/app/Repositories/Line/Repositories/LineRepository.php on line 9PHP message: PHP Fatal error:  Uncaught ReflectionException: Class translator does not exist in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('translator')
+#1 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('translator')
+#2 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('translator', Array, true)
+#3 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(637): Illuminate\Foundation\Application->resolve('translator', Array)
+#4 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(781): Illuminate\Container\Container->make('translator', Array)
+#5 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(119): Illuminate\ in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811" while reading response header from upstream, client: 172.19.0.1, server: linker-pro, request: "GET /api/cpe/init/1 HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "linker-pro"
+2022/04/07 15:27:49 [error] 12#12: *610 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Interface 'App\Repositories\Line\Repositories\BaseRepositoryInterfac' not found in /var/www/linker-pro/app/Repositories/Line/Repositories/LineRepository.php on line 9PHP message: PHP Fatal error:  Uncaught ReflectionException: Class translator does not exist in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('translator')
+#1 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('translator')
+#2 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('translator', Array, true)
+#3 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(637): Illuminate\Foundation\Application->resolve('translator', Array)
+#4 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(781): Illuminate\Container\Container->make('translator', Array)
+#5 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(119): Illuminate\ in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811" while reading response header from upstream, client: 172.19.0.1, server: linker-pro, request: "GET /api/cpe/init/1 HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "linker-pro"
+2022/04/07 16:13:16 [error] 12#12: *674 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class translator does not exist in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('translator')
+#1 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('translator')
+#2 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('translator', Array, true)
+#3 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(637): Illuminate\Foundation\Application->resolve('translator', Array)
+#4 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(781): Illuminate\Container\Container->make('translator', Array)
+#5 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(119): Illuminate\ in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811PHP message: PHP Fatal error:  Uncaught ReflectionException: Class translator does not exist in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('translator')
+#1 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('translator')
+#2 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('translator', Array, true)
+#3 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(637): Illuminate\Foundation\Application->resolve('translator', Array)
+#4 /var/www/linker-pro/vendor/
+2022/04/07 16:13:27 [error] 12#12: *674 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class translator does not exist in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('translator')
+#1 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('translator')
+#2 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('translator', Array, true)
+#3 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(637): Illuminate\Foundation\Application->resolve('translator', Array)
+#4 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(781): Illuminate\Container\Container->make('translator', Array)
+#5 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(119): Illuminate\ in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811PHP message: PHP Fatal error:  Uncaught ReflectionException: Class translator does not exist in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('translator')
+#1 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('translator')
+#2 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('translator', Array, true)
+#3 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(637): Illuminate\Foundation\Application->resolve('translator', Array)
+#4 /var/www/linker-pro/vendor/
+2022/04/07 16:14:42 [error] 12#12: *677 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class translator does not exist in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('translator')
+#1 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('translator')
+#2 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('translator', Array, true)
+#3 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(637): Illuminate\Foundation\Application->resolve('translator', Array)
+#4 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(781): Illuminate\Container\Container->make('translator', Array)
+#5 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(119): Illuminate\ in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811PHP message: PHP Fatal error:  Uncaught ReflectionException: Class translator does not exist in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('translator')
+#1 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('translator')
+#2 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('translator', Array, true)
+#3 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(637): Illuminate\Foundation\Application->resolve('translator', Array)
+#4 /var/www/linker-pro/vendor/
+2022/04/07 16:18:51 [error] 12#12: *679 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare App\Repositories\Cpe\Repositories\CpeRepository::fetch() in /var/www/linker-pro/app/Repositories/Cpe/Repositories/CpeRepository.php on line 86PHP message: PHP Fatal error:  Uncaught ReflectionException: Class translator does not exist in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('translator')
+#1 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('translator')
+#2 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('translator', Array, true)
+#3 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(637): Illuminate\Foundation\Application->resolve('translator', Array)
+#4 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(781): Illuminate\Container\Container->make('translator', Array)
+#5 /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(119): Illuminate\ in /var/www/linker-pro/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811" while reading response header from upstream, client: 172.19.0.1, server: linker-pro, request: "GET /api/cpe/init/1 HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "linker-pro"
